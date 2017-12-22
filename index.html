@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Isometric Grids | Demo 1 | Codrops</title>
+		<meta name="description" content="Decorative &amp; interactive isometric &amp; 3D grids." />
+		<meta name="keywords" content="isometric, grid, images, masonry, perspective" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+	</head>
+	<body class="demo-1">
+		<main>
+			<header class="codrops-header">
+				<h1>Events</h1>
+			</header>
+			<div class="isolayer isolayer--scroll1 isolayer--shadow">
+				<ul class="grid grid--effect-flip">
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/basketball.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Basketball</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/boxing.svg" alt="01" />
+							<span class="grid__title">Boxing</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/chess.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Chess</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/karate.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Karate</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/cricket.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Cricket</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/tennis.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Tennis</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/volleyball.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Volleyball</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/football.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Football</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/ping-pong.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Table Tennis</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/kabaddi-court.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Kabaddi</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/badminton.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Badminton</span>
+						</a>
+					</li>
+					<li class="grid__item">
+						<a class="grid__link" href="https://dribbble.com/forefathers">
+							<img class="grid__img layer" src="img/icons/squash.svg" alt="Canvas Dummy" />
+							<span class="grid__title">Squash</span>
+						</a>
+					</li>
+
+
+				</ul>
+			</div>
+		</main>
+
+		<script src="js/modal.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/dynamics.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/animOnScroll.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			function getRandomInt(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+			[].slice.call(document.querySelectorAll('.isolayer')).forEach(function(el) {
+				new IsoGrid(el, {
+					type : 'scrollable',
+					transform : 'translateX(-15vw) translateY(275px) rotateX(45deg) rotateZ(45deg)',
+					stackItemsAnimation : {
+						properties : function(pos) {
+							return {
+								translateZ: (pos+1) * 50,
+								rotateZ: getRandomInt(-3, 3)
+							};
+						},
+						options : function(pos, itemstotal) {
+							return {
+								type: dynamics.bezier,
+								duration: 500,
+								points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}],
+								//delay: (itemstotal-pos-1)*40
+							};
+						}
+					},
+					onGridLoaded : function() {
+						classie.add(document.body, 'grid-loaded');
+					}
+				});
+			});
+		})();
+		</script>
+	</body>
+</html>
